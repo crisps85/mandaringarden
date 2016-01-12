@@ -1,0 +1,268 @@
+/* 
+Project Name: Mandarin Garden
+Client: Simon Wong
+Author: Christine Wong
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+/*******************************************
+/*ANIMATIONS
+/********************************************/
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(25%, 0, 0);
+            transform: translate3d(25%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(25%, 0, 0);
+            transform: translate3d(25%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+.fadeInRight {
+  -webkit-animation: fadeInRight 1s 1;
+          animation: fadeInRight 1s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.section-image {
+  position: absolute;
+  -webkit-filter: drop-shadow(-0.5em 0.75em 0.5em rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(-0.5em 0.75em 0.5em rgba(0, 0, 0, 0.3));
+}
+
+.section-image--story {
+  top: 600px;
+  right: 4%;
+}
+@media screen and (max-width: 1000px) {
+  .section-image--story {
+    right: -2%;
+  }
+}
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+body {
+  	font-family: 'Raleway', sans-serif;
+}
+
+.row{
+	display: inline-block;
+	font-size: 0.7rem;
+	padding: 0.3rem;
+	max-width: 100%;
+}
+
+.first{
+	background-color: rgba(172, 132, 81, 0.6);
+	color: rgba(254,254,254,1);
+}
+
+.second{
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	padding-top: 1rem;
+}
+.second span{
+	font-weight: 700;
+}
+
+.second a{
+	font-size: 0.8rem;
+	color: black;
+	padding: 0.4rem;
+}
+
+.black-border a{
+	border: 2px solid black;
+	text-align: center;
+}
+.black-border a:hover{
+	background-color: black;
+	color: white;
+}
+.second ul{
+	padding: 0.7rem 0.2rem;
+}
+.nav2 a:hover{
+	color: rgba(204,166,115,1);
+	border: none;
+}
+
+.nav2 li{
+	border: none;
+}
+
+
+div{
+	float: left;
+
+}
+ul{
+	margin: 0;
+	border: 0;
+	font-size: 0.7rem;
+}
+.nav1 li:last-child{
+	border-right:none;
+	padding-right: 5rem;
+}
+.nav1 a{
+	color: white;
+}
+
+a:hover{
+	border-bottom: 1px solid white;
+}
+.first img{
+	width: 0.7rem;
+	height: 0.7rem;
+	padding-bottom: 0.1rem;
+}
+li{
+	display: inline-block;
+	border-right: 1px solid white;
+	padding: 0 0.5rem;
+}
+
+.third h1{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 2.5rem;
+}
+.third h2{
+	font-family: 'Kristi', cursive;
+	color: rgba(172, 132, 86, 0.8);
+}
+.third span{
+	font-weight: 400;
+}
+.third h6{
+	font-weight: 100;
+	text-transform: uppercase;
+}
+.fourth h1{
+	font-weight: 100;
+	padding: 4rem 0 1.5rem 0;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+.fourth h6, .fourth h1{
+	background-color: white;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.fourth h6{
+	font-size: 0.7rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	padding-bottom: 1rem;
+}
+
+.fourth h5{
+	font-family: 'Kristi', cursive;
+	background-color: white;
+	margin-top: 0;
+	font-size: 2.5rem;
+	padding-bottom: 4rem;
+}
+
+
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+.site-container {
+
+}
+
+.site-header {
+
+}
+.site-header h1 {
+	color:red;
+}
+.site-content {
+
+}
+.site-footer {
+
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/wok.jpg") center top no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.fifth div{
+	margin: 1rem;
+	padding: 0;
+}
